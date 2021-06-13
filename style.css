@@ -1,0 +1,298 @@
+:root{
+    --second-color:#0E2431;
+    --first-color: #4070F4;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    h1{font-size: 2rem !important;}
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin:0;
+}
+/*-----Navigation---*/
+.nav{
+    height: 10vh;
+    background-color:white;  
+
+}
+
+@media screen and (max-width: 768px){
+    .nav-menu{
+      position: fixed;
+      top: 10vh;
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding: 10px;
+      background-color: var(--second-color);
+      transition: .5s;
+      
+    }
+}
+
+.nav-item{
+    margin-bottom: 10px;
+  }
+  .nav-link{
+    position: relative;
+    color: #fff;
+    font-size:1.5rem;
+  }
+  .nav-link:hover{
+    position: relative;
+  }
+  .nav-link:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 40px;
+    background-color: var(--first-color);
+  }
+  .nav-logo{
+    color: var(--second-color);
+  }
+.nav-toggle{
+    color: var(--second-color);
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+  
+
+.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 40px;
+    background-color: var(--first-color);
+  }
+  
+
+.show{
+    right: 0;
+  }
+
+/*=====Header====*/
+.header{
+    height:90vh;
+}
+
+@media (max-width:768px) {
+    .header{margin-top: 70px;}
+}
+
+.head-container{
+    background-color: white;
+    height:100%;
+    display: grid;
+}
+
+
+.home-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.home-title-color{
+    color:Blue;
+
+}
+.home-img{
+    margin-top: 200px;
+}
+/*======Social-Media====*/
+.home-social{
+    margin-top: 50px;
+    font-size: 50px;
+    
+}
+.bxl-linkedin-square{
+    transition: 0.5s;
+}
+.bxl-linkedin-square:hover{
+    color: black;
+}
+
+.bxl-github{
+    color:rgba(20, 13, 13, 0.842);
+    transition: 0.5s;
+}
+.bxl-github:hover{
+    color: black;
+}
+
+.bxl-stack-overflow{
+    background-color: orange;
+    border-radius: 50%;
+    font-size:50px;
+    transition: 0.5s;
+    color:white;
+}
+.bxl-stack-overflow:hover{
+    background-color:black;
+}
+
+.bxl-medium-square{
+    color:rgba(20, 13, 13, 0.842);
+    transition: 0.5s;
+}
+.bxl-medium-square:hover{
+    color: black;
+}
+
+.bxl-facebook-circle{
+    transition: 0.5s;
+
+}
+.bxl-facebook-circle:hover{
+    color: black;
+}
+
+.bxl-discord{
+    color:darkslateblue;
+    transition: 0.5s;
+}
+.bxl-discord:hover{
+    color:black;
+}
+
+.bxl-instagram-alt{
+    color: rgb(255, 0, 85);
+    transition: 0.5s;
+}
+.bxl-instagram-alt:hover{
+    color:black;
+}
+
+/*======About-section=====*/
+.About-section{
+    padding-top: 150px;
+}
+
+
+
+/*======Skills-section====*/
+.skills-section{
+    
+    margin-top: 100px;
+    padding-top: 150px;
+}
+
+.skills-card{
+    height:150px;
+    background-color: white;
+
+}
+
+.skills-icon{
+    font-size:100px;
+
+}
+
+.bxl-css3{
+    color:blue;
+}
+
+.bxl-html5{
+    color:red;
+}
+
+.bxl-javascript{
+    color: yellow;
+    background-color:black;
+}
+
+.bxl-c-plus-plus{
+    color:blue;
+}
+
+.bxl-python{
+    color:blueviolet
+}
+.bxl-react{
+    animation-duration: 8s;
+    color:cyan;
+}
+
+.Projects-section{
+    
+    margin-top: 0px;
+    padding-top:150px
+}
+.project-card{
+    background-color: white;
+    height: 400px;
+    padding:0;
+    border-radius: 20px;
+}
+
+.tracker-project-img{
+    height:320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.todo-project-img{
+    height:320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contact-section{
+   
+    margin-top: 100px;
+    padding-top:150px;
+}
+
+.form-group{
+    margin-bottom: 40px;
+}
+.form-control:focus {
+    border-color:darkblue;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 17, 255, 0.6);
+}
+.form-control{
+    border-width: 2px;
+    border-color:black;
+}
+
+.footer{
+    background-color:rgb(18, 43, 126);
+    margin-top: 100px;
+    
+    
+}
+
+.footer-title{
+    text-align: center;
+
+}
+
+
